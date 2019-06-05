@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -27,11 +28,11 @@ MonoBehaviour:
   fog:
     m_Enabled: 1
     m_Settings:
-      excludeSkybox: 1
+      excludeSkybox: 0
   antialiasing:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
-      method: 0
+      method: 1
       fxaaSettings:
         preset: 2
       taaSettings:
@@ -40,34 +41,34 @@ MonoBehaviour:
         stationaryBlending: 0.95
         motionBlending: 0.85
   ambientOcclusion:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
-      intensity: 1
-      radius: 0.3
-      sampleCount: 10
+      intensity: 1.44
+      radius: 0.28
+      sampleCount: 3
       downsampling: 1
-      forceForwardCompatibility: 0
+      forceForwardCompatibility: 1
       ambientOnly: 0
       highPrecision: 0
   screenSpaceReflection:
     m_Enabled: 0
     m_Settings:
       reflection:
-        blendType: 0
-        reflectionQuality: 2
-        maxDistance: 100
-        iterationCount: 256
-        stepSize: 3
+        blendType: 1
+        reflectionQuality: 0
+        maxDistance: 154.3
+        iterationCount: 541
+        stepSize: 5
         widthModifier: 0.5
-        reflectionBlur: 1
-        reflectBackfaces: 0
+        reflectionBlur: 4.09
+        reflectBackfaces: 1
       intensity:
-        reflectionMultiplier: 1
-        fadeDistance: 100
+        reflectionMultiplier: 0.283
+        fadeDistance: 617
         fresnelFade: 1
         fresnelFadePower: 1
       screenEdgeMask:
-        intensity: 0.03
+        intensity: 0.5
   depthOfField:
     m_Enabled: 0
     m_Settings:
@@ -77,7 +78,7 @@ MonoBehaviour:
       useCameraFov: 0
       kernelSize: 1
   motionBlur:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       shutterAngle: 270
       sampleCount: 10
@@ -97,17 +98,17 @@ MonoBehaviour:
       logMin: -8
       logMax: 4
   bloom:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.5
-        threshold: 1.1
-        softKnee: 0.5
-        radius: 4
-        antiFlicker: 0
+        intensity: 0.27
+        threshold: 0.62
+        softKnee: 0.394
+        radius: 3.5
+        antiFlicker: 1
       lensDirt:
-        texture: {fileID: 0}
-        intensity: 3
+        texture: {fileID: 2800000, guid: 7a051dbda2d7bc447bee412427cd311e, type: 3}
+        intensity: 2.14
   colorGrading:
     m_Enabled: 0
     m_Settings:
@@ -134,9 +135,9 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 0, g: 0, b: 0, a: 0}
-          power: {r: 0, g: 0, b: 0, a: 0}
-          offset: {r: 0, g: 0, b: 0, a: 0}
+          slope: {r: 1, g: 1, b: 1, a: 0}
+          power: {r: 1, g: 1, b: 1, a: 0}
+          offset: {r: 1, g: 1, b: 1, a: 0}
         linear:
           lift: {r: 0, g: 0, b: 0, a: 0}
           gamma: {r: 0, g: 0, b: 0, a: 0}
@@ -305,7 +306,7 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
       intensity: 0.1
@@ -329,7 +330,7 @@ MonoBehaviour:
       opacity: 1
       rounded: 0
   dithering:
-    m_Enabled: 0
+    m_Enabled: 1
   monitors:
     currentMonitorID: 0
     refreshOnPlay: 0

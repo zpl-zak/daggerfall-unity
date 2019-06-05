@@ -885,12 +885,12 @@ namespace DaggerfallWorkshop.Game
                 newMaterial.name = "AutomapBelowSclicePlane injected for: " + material.name;
                 Texture mainTex = material.GetTexture("_MainTex");
                 newMaterial.SetTexture("_MainTex", mainTex);
-                Texture bumpMapTex = material.GetTexture("_BumpMap");
-                newMaterial.SetTexture("_BumpMap", bumpMapTex);
-                Texture emissionMapTex = material.GetTexture("_EmissionMap");
-                newMaterial.SetTexture("_EmissionMap", emissionMapTex);
-                Color emissionColor = material.GetColor("_EmissionColor");
-                newMaterial.SetColor("_EmissionColor", emissionColor);
+                //Texture bumpMapTex = material.GetTexture("_BumpMap");
+                //newMaterial.SetTexture("_BumpMap", bumpMapTex);
+                //Texture emissionMapTex = material.GetTexture("_EmissionMap");
+                //newMaterial.SetTexture("_EmissionMap", emissionMapTex);
+                //Color emissionColor = material.GetColor("_EmissionColor");
+                //newMaterial.SetColor("_EmissionColor", emissionColor);
                 Vector4 playerPosition = new Vector4(playerAdvancedPos.x, playerAdvancedPos.y + Camera.main.transform.localPosition.y, playerAdvancedPos.z, 0.0f);
                 newMaterial.SetVector("_PlayerPosition", playerPosition);
                 if (visitedInThisEntering == true)
